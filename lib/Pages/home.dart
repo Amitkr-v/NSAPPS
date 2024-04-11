@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Pages/navbar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter_application_1/Pages/page1new.dart';
+import 'package:flutter_application_1/Pages/page2.dart';
+import 'package:flutter_application_1/Pages/page4.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeMain extends StatelessWidget {
   @override
@@ -69,15 +72,16 @@ class DesktopLayout extends StatelessWidget {
                     ),
                     // Page 2
                     Container(
-                      color: const Color.fromARGB(255, 47, 75, 48),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       width: double.infinity,
                       height: screenHeight,
-                      child: Center(
+                      child:Page2(),
+                      /*child: Center(
                         child: Text(
                           'Page 2 Content',
                           style: TextStyle(fontSize: 24),
                         ),
-                      ),
+                      ),*/
                     ),
                     // Page 3
                     Container(
@@ -96,12 +100,13 @@ class DesktopLayout extends StatelessWidget {
                       color: Color.fromARGB(255, 178, 234, 248),
                       width: double.infinity,
                       height: screenHeight,
-                      child: Center(
+                      child:page4(),
+                      /*child: Center(
                         child: Text(
                           'Page 4 Content',
-                          style: TextStyle(fontSize: 24),
-                        ),
-                      ),
+                          style: TextStyle(fontSize: 24),*/
+                        
+                      
                     ),
                     // Page 5
                     Container(
